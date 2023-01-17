@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Mukta&display=swap');
+
+body {
+     font-family: 'Mukta', sans-serif;
+     background-color: #a0c4ff;
+}
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(224, 228, 26);
+}
+
+.titulo {
+    color: #fdffb6;
+    font-size: 32px;
+/*     color:blueviolet;
+    width: 400px;
+    height: 50px;
+    background-color:rgb(30, 194, 44); */
+}
+
+.subtitulo {
+    color: #ffd6a5;
+    font-size: 24px;
+
+}
+
+.tarjetas, .tarjetas-de-ataque {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.tarjeta-de-mokepons {
+    width: 220px;
+    height: 140px;
+    padding: 40px;
+    background: #bdb2ff;
+    box-sizing: border-box;
+    margin: 36px;
+    border: 3px solid #ffc6ff;
+    font-size: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.tarjeta-de-mokepons img {
+    width: 78px;
+    border-radius: 16px;
+}
+#hipodogeText {
+    color:rgb(20, 158, 238);
+    font-size: 30px;
+}
+#capipepoText {
+    color:rgb(16, 119, 7);
+    font-size: 32px;
+}
+#ratigueyaText {
+    color:red;
+    font-size: 30px;
+}
+#boton-mascota{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 18px;
+    height: 60px;
+    width: 260px;
+    font-size: 40px;
+    background-color: #caffbf;
+    color: #ffadad;
+    border-radius: 32px;
+    border: 6px solid #9bf6ff;
+    font-family: 'Amatic SC', cursive;
+
+}
+
+input {
+    display: none;
+    gap: 10px;
+}
+input:hover + label,:checked + label {
+background: #fdffb6;
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque {
+    background-color: #bdb2ff;
+    padding: 10px;
+    border-radius: 128px;
+    border: 1px solid #ffc6ff;
+    font-size: 16px;
+    width: 80px;
+}
+
+#boton-fuego {
+    height: 80px;
+    width: 120px;
+}
+
+#boton-agua {
+    height: 80px;
+    width: 120px;
+}
+
+#boton-tierra {
+    height: 80px;
+    width: 120px;
+}
+
+#fuegoText {
+    color:rgb(245, 3, 3)
+}
+
+#aguaText {
+    color:aqua
+}
+
+#tierraText {
+    color:rgb(16, 119, 7);
+}
+
+#mensajes {
+    width: 180px;
+    background: #ffd6a5;
+    padding: 24px;
+    margin-top: 24px;
+    border-radius: 24px;
+    border: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Amatic SC', cursive;
+    font-size: 32px;
+}
+
+#boton-reiniciar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    padding: 12px;
+    font-size: 32px;
+    border-radius: 16px;
+    color:#ffadad;
+    background:#caffbf;
+    border: 6px solid #9bf6ff;
+    font-family: 'Amatic SC', cursive;
+}
+
+.ataques-box {
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+    color:#d81d55
+    
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #caffbf;
+    color:#ffadad;
+    border: 1px solid #9bf6ff;
+    margin-top: 4px;
+    margin-left: 2px;
+    border-radius: 8px;
+
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center; */
+    margin: 10px 0;
+    margin-bottom: 4px;
+    height: 40px;
+    width: 80px;
+    font-size: 20px;
+    background-color: #caffbf;
+    color: #ffadad;
+    border-radius: 32px;
+    border: 6px solid #9bf6ff;
+    font-family: 'Amatic SC', cursive;
+}
+
+@media (max-width: 560px) {
+    .tarjetas, .tarjetas-de-ataque {
+        flex-direction: column;
+    }
+}
+@media (max-width: 300px) {
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    }
